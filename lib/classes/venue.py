@@ -35,7 +35,7 @@ class Venue:
         return [concert.band for concert in Concert.all if concert.venue == self]
     
     def concert_on(self, date):
-        ac = [concert for concert in Concert.all if concert.date == date]
+        ac = [concert for concert in self.concerts() if concert.date == date]
         if len(ac) == 0:
             return None
         else:
