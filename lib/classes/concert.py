@@ -52,5 +52,5 @@ class Concert:
             return False
         
     def introduction(self):
-        intro = f"Hello {self.venue.city}!!!!!, we are {self.band} and we're from {self.band.hometown}"
+        intro = f"Hello {self.venue.city}!!!!!, we are {self.band.name} and we're from {self.band.hometown}"
         return intro
